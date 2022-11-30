@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - AV1 </title>
+    <link rel="stylesheet" style type="text/css" href="_Layout.cshtml.css" asp-append-version="true" />
+
+
+<body style="font-family:arial; margin:50px;">
+
+    <h1 style="text-align:center;">Carros e Bicicletas</h1>
+    <div id="dv1" style="background:#111; border-radius:4px; color:#fff; padding:30px; margin:20px;">
+        <h2 style="margin:0px;">Carro: <span style="color:#febe01;">R$1999</span></h2>
+        <p style="color:#b2b2b2;">Carro modelo <span style="color:#febe01;">2045</span>, com <span
+                style="color:#febe01;">200km</span> rodados.</p>
+        <a href="/" class="botao"
+            style="display:inline-block; color:#332200; background-color:#febe01; border-radius:4px; padding:10px; text-decoration:none;">Comprar
+            carro</a>
+    </div>
+    <div id="dv2" style="background:#111; border-radius:4px; color:#fff; padding:30px; margin:20px;">
+        <h2 style="margin:0px;">Bicicleta: <span>R$199</span></h2>
+        <p style="color:#b2b2b2;">Bicicleta modelo <span>2050</span>, com <span>20km</span> rodados.</p>
+        <a href="/" class="botao"
+            style="display:inline-block; color:#332200; background-color:#febe01; border-radius:4px; padding:10px; text-decoration:none;">Comprar
+            bicicleta</a>
+    </div>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - Atividade_QUA - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+</body>
+
+</head>
+
+</html>
